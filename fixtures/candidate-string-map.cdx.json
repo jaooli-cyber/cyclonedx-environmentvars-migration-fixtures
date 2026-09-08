@@ -1,0 +1,29 @@
+{
+  "$schema": "https://cyclonedx.org/schema/2.0/cyclonedx-2.0.schema.json",
+  "formulation": [
+    {
+      "bom-ref": "formula:candidate-string-map",
+      "workflows": [
+        {
+          "bom-ref": "workflow:candidate-string-map",
+          "inputs": [
+            {
+              "environmentVars": {
+                "LANG": "en_US.UTF-8",
+                "MY_FLAG": ""
+              }
+            }
+          ],
+          "name": "Synthetic candidate-string-map",
+          "taskTypes": [
+            "build"
+          ],
+          "uid": "urn:example:synthetic:candidate-string-map"
+        }
+      ]
+    }
+  ],
+  "specFormat": "CycloneDX",
+  "specVersion": "2.0",
+  "version": 1
+}

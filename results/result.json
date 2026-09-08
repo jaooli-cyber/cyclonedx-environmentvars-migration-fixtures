@@ -1,0 +1,462 @@
+{
+  "checks": [
+    {
+      "errors": [
+        {
+          "message": "{'0TRUST': True} is not of type 'array'",
+          "path": "/formulation/0/workflows/0/inputs/0/environmentVars",
+          "schemaPath": "/properties/formulation/items/properties/workflows/items/properties/inputs/items/properties/environmentVars/type",
+          "validator": "type"
+        }
+      ],
+      "expected": "INVALID",
+      "id": "candidate-boolean:base",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "INVALID",
+      "passed": true
+    },
+    {
+      "errors": [
+        {
+          "message": "True is not of type 'string', 'null'",
+          "path": "/formulation/0/workflows/0/inputs/0/environmentVars/0TRUST",
+          "schemaPath": "/properties/formulation/items/properties/workflows/items/properties/inputs/items/properties/environmentVars/additionalProperties/type",
+          "validator": "type"
+        }
+      ],
+      "expected": "INVALID",
+      "id": "candidate-boolean:candidate",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "INVALID",
+      "passed": true
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "id": "candidate-boolean:migration",
+      "kind": "SEMANTIC_MIGRATION",
+      "observed": "NOT_APPLICABLE",
+      "passed": true,
+      "reason": "candidate source contains a value outside string or null",
+      "targetErrors": [],
+      "targetObserved": null,
+      "targetRevision": "base"
+    },
+    {
+      "errors": [
+        {
+          "message": "{'': ''} is not of type 'array'",
+          "path": "/formulation/0/workflows/0/inputs/0/environmentVars",
+          "schemaPath": "/properties/formulation/items/properties/workflows/items/properties/inputs/items/properties/environmentVars/type",
+          "validator": "type"
+        }
+      ],
+      "expected": "INVALID",
+      "id": "candidate-empty-name:base",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "INVALID",
+      "passed": true
+    },
+    {
+      "errors": [],
+      "expected": "VALID",
+      "id": "candidate-empty-name:candidate",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "VALID",
+      "passed": true
+    },
+    {
+      "expected": "UNVERIFIABLE",
+      "id": "candidate-empty-name:migration",
+      "kind": "SEMANTIC_MIGRATION",
+      "observed": "UNVERIFIABLE",
+      "passed": true,
+      "reason": "empty name is representable but has unresolved environment semantics",
+      "targetErrors": [],
+      "targetObserved": "VALID",
+      "targetRevision": "base"
+    },
+    {
+      "errors": [
+        {
+          "message": "{'LC': {'ALL': None}} is not of type 'array'",
+          "path": "/formulation/0/workflows/0/inputs/0/environmentVars",
+          "schemaPath": "/properties/formulation/items/properties/workflows/items/properties/inputs/items/properties/environmentVars/type",
+          "validator": "type"
+        }
+      ],
+      "expected": "INVALID",
+      "id": "candidate-nested-object:base",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "INVALID",
+      "passed": true
+    },
+    {
+      "errors": [
+        {
+          "message": "{'ALL': None} is not of type 'string', 'null'",
+          "path": "/formulation/0/workflows/0/inputs/0/environmentVars/LC",
+          "schemaPath": "/properties/formulation/items/properties/workflows/items/properties/inputs/items/properties/environmentVars/additionalProperties/type",
+          "validator": "type"
+        }
+      ],
+      "expected": "INVALID",
+      "id": "candidate-nested-object:candidate",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "INVALID",
+      "passed": true
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "id": "candidate-nested-object:migration",
+      "kind": "SEMANTIC_MIGRATION",
+      "observed": "NOT_APPLICABLE",
+      "passed": true,
+      "reason": "candidate source contains a value outside string or null",
+      "targetErrors": [],
+      "targetObserved": null,
+      "targetRevision": "base"
+    },
+    {
+      "errors": [
+        {
+          "message": "{'LC_ALL': None} is not of type 'array'",
+          "path": "/formulation/0/workflows/0/inputs/0/environmentVars",
+          "schemaPath": "/properties/formulation/items/properties/workflows/items/properties/inputs/items/properties/environmentVars/type",
+          "validator": "type"
+        }
+      ],
+      "expected": "INVALID",
+      "id": "candidate-null-unset:base",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "INVALID",
+      "passed": true
+    },
+    {
+      "errors": [],
+      "expected": "VALID",
+      "id": "candidate-null-unset:candidate",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "VALID",
+      "passed": true
+    },
+    {
+      "expected": "UNVERIFIABLE",
+      "id": "candidate-null-unset:migration",
+      "kind": "SEMANTIC_MIGRATION",
+      "observed": "UNVERIFIABLE",
+      "passed": true,
+      "reason": "legacy property values have no exact explicit-null equivalent",
+      "targetErrors": [],
+      "targetObserved": null,
+      "targetRevision": "base"
+    },
+    {
+      "errors": [
+        {
+          "message": "{'AMOUNT': 2} is not of type 'array'",
+          "path": "/formulation/0/workflows/0/inputs/0/environmentVars",
+          "schemaPath": "/properties/formulation/items/properties/workflows/items/properties/inputs/items/properties/environmentVars/type",
+          "validator": "type"
+        }
+      ],
+      "expected": "INVALID",
+      "id": "candidate-number:base",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "INVALID",
+      "passed": true
+    },
+    {
+      "errors": [
+        {
+          "message": "2 is not of type 'string', 'null'",
+          "path": "/formulation/0/workflows/0/inputs/0/environmentVars/AMOUNT",
+          "schemaPath": "/properties/formulation/items/properties/workflows/items/properties/inputs/items/properties/environmentVars/additionalProperties/type",
+          "validator": "type"
+        }
+      ],
+      "expected": "INVALID",
+      "id": "candidate-number:candidate",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "INVALID",
+      "passed": true
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "id": "candidate-number:migration",
+      "kind": "SEMANTIC_MIGRATION",
+      "observed": "NOT_APPLICABLE",
+      "passed": true,
+      "reason": "candidate source contains a value outside string or null",
+      "targetErrors": [],
+      "targetObserved": null,
+      "targetRevision": "base"
+    },
+    {
+      "errors": [
+        {
+          "message": "{'LANG': 'en_US.UTF-8', 'MY_FLAG': ''} is not of type 'array'",
+          "path": "/formulation/0/workflows/0/inputs/0/environmentVars",
+          "schemaPath": "/properties/formulation/items/properties/workflows/items/properties/inputs/items/properties/environmentVars/type",
+          "validator": "type"
+        }
+      ],
+      "expected": "INVALID",
+      "id": "candidate-string-map:base",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "INVALID",
+      "passed": true
+    },
+    {
+      "errors": [],
+      "expected": "VALID",
+      "id": "candidate-string-map:candidate",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "VALID",
+      "passed": true
+    },
+    {
+      "expected": "EQUIVALENT_NORMALIZATION",
+      "id": "candidate-string-map:migration",
+      "kind": "SEMANTIC_MIGRATION",
+      "observed": "EQUIVALENT_NORMALIZATION",
+      "passed": true,
+      "reason": "string-valued map converts to unique legacy properties",
+      "targetErrors": [],
+      "targetObserved": "VALID",
+      "targetRevision": "base"
+    },
+    {
+      "errors": [],
+      "expected": "VALID",
+      "id": "legacy-conflicting-name:base",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "VALID",
+      "passed": true
+    },
+    {
+      "errors": [
+        {
+          "message": "[{'name': 'MODE', 'value': 'safe'}, {'name': 'MODE', 'value': 'fast'}] is not of type 'object'",
+          "path": "/formulation/0/workflows/0/inputs/0/environmentVars",
+          "schemaPath": "/properties/formulation/items/properties/workflows/items/properties/inputs/items/properties/environmentVars/type",
+          "validator": "type"
+        }
+      ],
+      "expected": "INVALID",
+      "id": "legacy-conflicting-name:candidate",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "INVALID",
+      "passed": true
+    },
+    {
+      "expected": "UNVERIFIABLE",
+      "id": "legacy-conflicting-name:migration",
+      "kind": "SEMANTIC_MIGRATION",
+      "observed": "UNVERIFIABLE",
+      "passed": true,
+      "reason": "multiple legacy values share one target map key",
+      "targetErrors": [],
+      "targetObserved": null,
+      "targetRevision": "candidate"
+    },
+    {
+      "errors": [],
+      "expected": "VALID",
+      "id": "legacy-empty-name:base",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "VALID",
+      "passed": true
+    },
+    {
+      "errors": [
+        {
+          "message": "[{'name': '', 'value': ''}] is not of type 'object'",
+          "path": "/formulation/0/workflows/0/inputs/0/environmentVars",
+          "schemaPath": "/properties/formulation/items/properties/workflows/items/properties/inputs/items/properties/environmentVars/type",
+          "validator": "type"
+        }
+      ],
+      "expected": "INVALID",
+      "id": "legacy-empty-name:candidate",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "INVALID",
+      "passed": true
+    },
+    {
+      "expected": "UNVERIFIABLE",
+      "id": "legacy-empty-name:migration",
+      "kind": "SEMANTIC_MIGRATION",
+      "observed": "UNVERIFIABLE",
+      "passed": true,
+      "reason": "empty name is representable but has unresolved environment semantics",
+      "targetErrors": [],
+      "targetObserved": "VALID",
+      "targetRevision": "candidate"
+    },
+    {
+      "errors": [],
+      "expected": "VALID",
+      "id": "legacy-plain-flag:base",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "VALID",
+      "passed": true
+    },
+    {
+      "errors": [
+        {
+          "message": "['MY_FLAG'] is not of type 'object'",
+          "path": "/formulation/0/workflows/0/inputs/0/environmentVars",
+          "schemaPath": "/properties/formulation/items/properties/workflows/items/properties/inputs/items/properties/environmentVars/type",
+          "validator": "type"
+        }
+      ],
+      "expected": "INVALID",
+      "id": "legacy-plain-flag:candidate",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "INVALID",
+      "passed": true
+    },
+    {
+      "expected": "EQUIVALENT_NORMALIZATION",
+      "id": "legacy-plain-flag:migration",
+      "kind": "SEMANTIC_MIGRATION",
+      "observed": "EQUIVALENT_NORMALIZATION",
+      "passed": true,
+      "reason": "plain presence flags map to non-absent empty strings",
+      "targetErrors": [],
+      "targetObserved": "VALID",
+      "targetRevision": "candidate"
+    },
+    {
+      "errors": [],
+      "expected": "VALID",
+      "id": "legacy-posix-assignment:base",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "VALID",
+      "passed": true
+    },
+    {
+      "errors": [
+        {
+          "message": "['LANG=en_US.UTF-8'] is not of type 'object'",
+          "path": "/formulation/0/workflows/0/inputs/0/environmentVars",
+          "schemaPath": "/properties/formulation/items/properties/workflows/items/properties/inputs/items/properties/environmentVars/type",
+          "validator": "type"
+        }
+      ],
+      "expected": "INVALID",
+      "id": "legacy-posix-assignment:candidate",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "INVALID",
+      "passed": true
+    },
+    {
+      "expected": "UNVERIFIABLE",
+      "id": "legacy-posix-assignment:migration",
+      "kind": "SEMANTIC_MIGRATION",
+      "observed": "UNVERIFIABLE",
+      "passed": true,
+      "reason": "legacy strings have no normative cross-system assignment grammar",
+      "targetErrors": [],
+      "targetObserved": null,
+      "targetRevision": "candidate"
+    },
+    {
+      "errors": [],
+      "expected": "VALID",
+      "id": "legacy-powershell-assignment:base",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "VALID",
+      "passed": true
+    },
+    {
+      "errors": [
+        {
+          "message": "[\"$Env:LANG='en_US.UTF-8'\"] is not of type 'object'",
+          "path": "/formulation/0/workflows/0/inputs/0/environmentVars",
+          "schemaPath": "/properties/formulation/items/properties/workflows/items/properties/inputs/items/properties/environmentVars/type",
+          "validator": "type"
+        }
+      ],
+      "expected": "INVALID",
+      "id": "legacy-powershell-assignment:candidate",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "INVALID",
+      "passed": true
+    },
+    {
+      "expected": "UNVERIFIABLE",
+      "id": "legacy-powershell-assignment:migration",
+      "kind": "SEMANTIC_MIGRATION",
+      "observed": "UNVERIFIABLE",
+      "passed": true,
+      "reason": "legacy strings have no normative cross-system assignment grammar",
+      "targetErrors": [],
+      "targetObserved": null,
+      "targetRevision": "candidate"
+    },
+    {
+      "errors": [],
+      "expected": "VALID",
+      "id": "legacy-unique-pairs:base",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "VALID",
+      "passed": true
+    },
+    {
+      "errors": [
+        {
+          "message": "[{'name': 'LANG', 'value': 'en_US.UTF-8'}, {'name': 'MY_FLAG', 'value': ''}] is not of type 'object'",
+          "path": "/formulation/0/workflows/0/inputs/0/environmentVars",
+          "schemaPath": "/properties/formulation/items/properties/workflows/items/properties/inputs/items/properties/environmentVars/type",
+          "validator": "type"
+        }
+      ],
+      "expected": "INVALID",
+      "id": "legacy-unique-pairs:candidate",
+      "kind": "SCHEMA_ACCEPTANCE",
+      "observed": "INVALID",
+      "passed": true
+    },
+    {
+      "expected": "EQUIVALENT_NORMALIZATION",
+      "id": "legacy-unique-pairs:migration",
+      "kind": "SEMANTIC_MIGRATION",
+      "observed": "EQUIVALENT_NORMALIZATION",
+      "passed": true,
+      "reason": "unique string pairs map without value loss",
+      "targetErrors": [],
+      "targetObserved": "VALID",
+      "targetRevision": "candidate"
+    }
+  ],
+  "projectId": "cyclonedx-environmentvars-migration-fixtures",
+  "reportVersion": "1.0",
+  "source": {
+    "base": {
+      "commit": "a1c8aeb2e4e6a72851fd937f210e9b5add1cf514",
+      "formulationSchemaSha256": "487fd1d6ff0a8b046c68d458a36e03e83e65f54bf029134e24af5a3e94ee8692",
+      "rootSchemaSha256": "c18273619269372dbe3ec6a497daafc9f4729974d462fa0aed835ab9a0d62a23",
+      "schemaTreeGitSha1": "c006ae3111e11ca64158a9e32664cd7705bd7f32"
+    },
+    "candidate": {
+      "commit": "0ebfa3951e5cf0976e16debcf14c0ef8687fb4ef",
+      "formulationSchemaSha256": "f8072e7f79be45fd9189748923a509cad8e9749a368f5a0919905bdd1eb9d181",
+      "rootSchemaSha256": "c18273619269372dbe3ec6a497daafc9f4729974d462fa0aed835ab9a0d62a23",
+      "schemaTreeGitSha1": "fd058cd7108af73cc070ad90b96a759807cb87ea"
+    },
+    "pullRequest": "https://github.com/CycloneDX/specification/pull/1088",
+    "repository": "https://github.com/CycloneDX/specification.git"
+  },
+  "summary": {
+    "cases": 12,
+    "checks": 36,
+    "failed": 0,
+    "migrationClassifications": {
+      "EQUIVALENT_NORMALIZATION": 3,
+      "NOT_APPLICABLE": 3,
+      "UNVERIFIABLE": 6
+    },
+    "passed": 36
+  }
+}

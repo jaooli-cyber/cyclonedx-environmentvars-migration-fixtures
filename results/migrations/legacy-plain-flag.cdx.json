@@ -1,0 +1,28 @@
+{
+  "$schema": "https://cyclonedx.org/schema/2.0/cyclonedx-2.0.schema.json",
+  "formulation": [
+    {
+      "bom-ref": "formula:legacy-plain-flag:candidate",
+      "workflows": [
+        {
+          "bom-ref": "workflow:legacy-plain-flag:candidate",
+          "inputs": [
+            {
+              "environmentVars": {
+                "MY_FLAG": ""
+              }
+            }
+          ],
+          "name": "Synthetic legacy-plain-flag",
+          "taskTypes": [
+            "build"
+          ],
+          "uid": "urn:example:synthetic:legacy-plain-flag:candidate"
+        }
+      ]
+    }
+  ],
+  "specFormat": "CycloneDX",
+  "specVersion": "2.0",
+  "version": 1
+}

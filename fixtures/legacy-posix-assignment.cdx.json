@@ -1,0 +1,28 @@
+{
+  "$schema": "https://cyclonedx.org/schema/2.0/cyclonedx-2.0.schema.json",
+  "formulation": [
+    {
+      "bom-ref": "formula:legacy-posix-assignment",
+      "workflows": [
+        {
+          "bom-ref": "workflow:legacy-posix-assignment",
+          "inputs": [
+            {
+              "environmentVars": [
+                "LANG=en_US.UTF-8"
+              ]
+            }
+          ],
+          "name": "Synthetic legacy-posix-assignment",
+          "taskTypes": [
+            "build"
+          ],
+          "uid": "urn:example:synthetic:legacy-posix-assignment"
+        }
+      ]
+    }
+  ],
+  "specFormat": "CycloneDX",
+  "specVersion": "2.0",
+  "version": 1
+}

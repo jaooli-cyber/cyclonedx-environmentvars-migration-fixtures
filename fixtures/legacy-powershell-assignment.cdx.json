@@ -1,0 +1,28 @@
+{
+  "$schema": "https://cyclonedx.org/schema/2.0/cyclonedx-2.0.schema.json",
+  "formulation": [
+    {
+      "bom-ref": "formula:legacy-powershell-assignment",
+      "workflows": [
+        {
+          "bom-ref": "workflow:legacy-powershell-assignment",
+          "inputs": [
+            {
+              "environmentVars": [
+                "$Env:LANG='en_US.UTF-8'"
+              ]
+            }
+          ],
+          "name": "Synthetic legacy-powershell-assignment",
+          "taskTypes": [
+            "build"
+          ],
+          "uid": "urn:example:synthetic:legacy-powershell-assignment"
+        }
+      ]
+    }
+  ],
+  "specFormat": "CycloneDX",
+  "specVersion": "2.0",
+  "version": 1
+}

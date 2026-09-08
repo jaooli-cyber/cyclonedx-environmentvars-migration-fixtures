@@ -1,0 +1,31 @@
+{
+  "$schema": "https://cyclonedx.org/schema/2.0/cyclonedx-2.0.schema.json",
+  "formulation": [
+    {
+      "bom-ref": "formula:candidate-empty-name:legacy",
+      "workflows": [
+        {
+          "bom-ref": "workflow:candidate-empty-name:legacy",
+          "inputs": [
+            {
+              "environmentVars": [
+                {
+                  "name": "",
+                  "value": ""
+                }
+              ]
+            }
+          ],
+          "name": "Synthetic candidate-empty-name",
+          "taskTypes": [
+            "build"
+          ],
+          "uid": "urn:example:synthetic:candidate-empty-name:legacy"
+        }
+      ]
+    }
+  ],
+  "specFormat": "CycloneDX",
+  "specVersion": "2.0",
+  "version": 1
+}

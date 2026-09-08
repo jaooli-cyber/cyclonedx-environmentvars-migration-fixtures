@@ -1,0 +1,43 @@
+{
+  "manifestVersion": "1.0",
+  "projectId": "cyclonedx-environmentvars-migration-fixtures",
+  "source": {
+    "repository": "https://github.com/CycloneDX/specification.git",
+    "pullRequest": "https://github.com/CycloneDX/specification/pull/1088",
+    "base": {
+      "commit": "a1c8aeb2e4e6a72851fd937f210e9b5add1cf514",
+      "schemaTreeGitSha1": "c006ae3111e11ca64158a9e32664cd7705bd7f32",
+      "rootSchemaSha256": "c18273619269372dbe3ec6a497daafc9f4729974d462fa0aed835ab9a0d62a23",
+      "formulationSchemaSha256": "487fd1d6ff0a8b046c68d458a36e03e83e65f54bf029134e24af5a3e94ee8692"
+    },
+    "candidate": {
+      "commit": "0ebfa3951e5cf0976e16debcf14c0ef8687fb4ef",
+      "schemaTreeGitSha1": "fd058cd7108af73cc070ad90b96a759807cb87ea",
+      "rootSchemaSha256": "c18273619269372dbe3ec6a497daafc9f4729974d462fa0aed835ab9a0d62a23",
+      "formulationSchemaSha256": "f8072e7f79be45fd9189748923a509cad8e9749a368f5a0919905bdd1eb9d181"
+    }
+  },
+  "expected": {
+    "caseCount": 12,
+    "checkCount": 36,
+    "migrationClassifications": {
+      "EQUIVALENT_NORMALIZATION": 3,
+      "NOT_APPLICABLE": 3,
+      "UNVERIFIABLE": 6
+    },
+    "cases": {
+      "legacy-unique-pairs": {"base": "VALID", "candidate": "INVALID", "migration": "EQUIVALENT_NORMALIZATION", "migratedTarget": "VALID"},
+      "legacy-plain-flag": {"base": "VALID", "candidate": "INVALID", "migration": "EQUIVALENT_NORMALIZATION", "migratedTarget": "VALID"},
+      "legacy-posix-assignment": {"base": "VALID", "candidate": "INVALID", "migration": "UNVERIFIABLE"},
+      "legacy-powershell-assignment": {"base": "VALID", "candidate": "INVALID", "migration": "UNVERIFIABLE"},
+      "legacy-conflicting-name": {"base": "VALID", "candidate": "INVALID", "migration": "UNVERIFIABLE"},
+      "legacy-empty-name": {"base": "VALID", "candidate": "INVALID", "migration": "UNVERIFIABLE", "migratedTarget": "VALID"},
+      "candidate-string-map": {"base": "INVALID", "candidate": "VALID", "migration": "EQUIVALENT_NORMALIZATION", "migratedTarget": "VALID"},
+      "candidate-null-unset": {"base": "INVALID", "candidate": "VALID", "migration": "UNVERIFIABLE"},
+      "candidate-empty-name": {"base": "INVALID", "candidate": "VALID", "migration": "UNVERIFIABLE", "migratedTarget": "VALID"},
+      "candidate-nested-object": {"base": "INVALID", "candidate": "INVALID", "migration": "NOT_APPLICABLE"},
+      "candidate-number": {"base": "INVALID", "candidate": "INVALID", "migration": "NOT_APPLICABLE"},
+      "candidate-boolean": {"base": "INVALID", "candidate": "INVALID", "migration": "NOT_APPLICABLE"}
+    }
+  }
+}

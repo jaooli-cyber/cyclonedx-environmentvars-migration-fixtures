@@ -1,0 +1,35 @@
+{
+  "$schema": "https://cyclonedx.org/schema/2.0/cyclonedx-2.0.schema.json",
+  "formulation": [
+    {
+      "bom-ref": "formula:legacy-unique-pairs",
+      "workflows": [
+        {
+          "bom-ref": "workflow:legacy-unique-pairs",
+          "inputs": [
+            {
+              "environmentVars": [
+                {
+                  "name": "LANG",
+                  "value": "en_US.UTF-8"
+                },
+                {
+                  "name": "MY_FLAG",
+                  "value": ""
+                }
+              ]
+            }
+          ],
+          "name": "Synthetic legacy-unique-pairs",
+          "taskTypes": [
+            "build"
+          ],
+          "uid": "urn:example:synthetic:legacy-unique-pairs"
+        }
+      ]
+    }
+  ],
+  "specFormat": "CycloneDX",
+  "specVersion": "2.0",
+  "version": 1
+}

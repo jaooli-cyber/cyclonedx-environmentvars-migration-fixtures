@@ -1,0 +1,78 @@
+{
+  "cases": [
+    {
+      "file": "legacy-unique-pairs.cdx.json",
+      "id": "legacy-unique-pairs",
+      "sha256": "4b5871caab72180d01e44eb33cc63177f9f15161a0eb03163e728cc42451b81d",
+      "shape": "legacy"
+    },
+    {
+      "file": "legacy-plain-flag.cdx.json",
+      "id": "legacy-plain-flag",
+      "sha256": "79986dd67452fa838bf6fd4ea21f47fccfccc5f3cd5599012ab13b61e858bc28",
+      "shape": "legacy"
+    },
+    {
+      "file": "legacy-posix-assignment.cdx.json",
+      "id": "legacy-posix-assignment",
+      "sha256": "3034a0f9df4044481f48d6823b152fd84012e8888110512cb676901cfb7d2eb3",
+      "shape": "legacy"
+    },
+    {
+      "file": "legacy-powershell-assignment.cdx.json",
+      "id": "legacy-powershell-assignment",
+      "sha256": "6984fbca6bac4a18ae7ad3a8b07ac496864e7953869e6b21574e88e6cabad977",
+      "shape": "legacy"
+    },
+    {
+      "file": "legacy-conflicting-name.cdx.json",
+      "id": "legacy-conflicting-name",
+      "sha256": "14335d4ed265e50747acdef0dbd8ae2637d0c7aef32f069c1d60fd663c9a1ff3",
+      "shape": "legacy"
+    },
+    {
+      "file": "legacy-empty-name.cdx.json",
+      "id": "legacy-empty-name",
+      "sha256": "d9e91fab211357dfe2446dfbd01ddfdc9747094417fc208c18be8ae06679207b",
+      "shape": "legacy"
+    },
+    {
+      "file": "candidate-string-map.cdx.json",
+      "id": "candidate-string-map",
+      "sha256": "e5db71ef24e8ce320c0aa0fd21c5b6778dc098f8cc8d0b4dc07f0bc117acfaeb",
+      "shape": "candidate"
+    },
+    {
+      "file": "candidate-null-unset.cdx.json",
+      "id": "candidate-null-unset",
+      "sha256": "250e75168e11885f4ccea9817a870615c2f3a3894962004b326dd39b8960d210",
+      "shape": "candidate"
+    },
+    {
+      "file": "candidate-empty-name.cdx.json",
+      "id": "candidate-empty-name",
+      "sha256": "fab7630a6594aaed9d2568ebdf000324993fccbf354539c35751e50f792b892e",
+      "shape": "candidate"
+    },
+    {
+      "file": "candidate-nested-object.cdx.json",
+      "id": "candidate-nested-object",
+      "sha256": "e8f3ccd9d74878f3737fb2f44ea6b043fafc47fd448d55d9691d3b58aa4cdbbf",
+      "shape": "candidate"
+    },
+    {
+      "file": "candidate-number.cdx.json",
+      "id": "candidate-number",
+      "sha256": "d0e82d937b4cab031962abf00e3207b59b37acfbe6114c257c0a6fa32f9327c9",
+      "shape": "candidate"
+    },
+    {
+      "file": "candidate-boolean.cdx.json",
+      "id": "candidate-boolean",
+      "sha256": "cf04bd84d2ef91aaaca956eac2532d611407e18ebbaf002210de04bcd353e067",
+      "shape": "candidate"
+    }
+  ],
+  "corpusVersion": "1.0",
+  "synthetic": true
+}
